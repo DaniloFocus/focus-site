@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="/assets/js/script.js" defer></script>
+    <script src="/assets/js/script-slide.js" defer></script>
+    <script src="/assets/js/script-player.js" defer></script>
+    <script src="/assets/js/script-testimonials.js" defer></script>
+    <script src="/assets/js/script-nav.js" defer></script>
+    <script src="/assets/js/script-input-animation.js" defer></script>
+    <script src="/assets/js/script-hero.js" defer></script>
+
+    <title>Focus BR</title>
+</head>
+
+<body class="active-load">
+
+    <!-- <div class="container-load">
+        <div class="wave"></div>
+        <div class="wave"></div> 
+        <div class="wave"></div>
+    </div> -->
+
+    <header>
+        <nav class="menu">
+            <div class="logo">FOCüS</div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Artista</a></li>
+                <li><a href="#gallery">Fotos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#course">Cursos</a></li>
+                <!-- <li><a href="#testimonials">Testemunhos</a></li> -->
+                <li><a href="#form">Contato</a></li>
+            </ul>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><ion-icon class="btn-style" name="logo-instagram"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="#"><ion-icon class="btn-style" name="logo-facebook"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="#"><ion-icon class="btn-style" name="logo-youtube"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="#"><ion-icon class="btn-style" name="logo-soundcloud"></ion-icon></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="hero__inner">
+                <h1 class="hero__heading">Uma <span class="hero--highlight">viagem</span> <br /> <span
+                        style="color: #a3a5a8;">sonora intrigante</span></h1>
+                <p class="hero__content">
+                    Seja qual for sua preferência dentro do mundo do psy trance, 
+                    nosso site é uma porta de entrada para explorar os projetos
+                    eletrônicos mais cativantes e inovadores. Clique e mergulhe na batida da sua escolha!
+                </p>
+                <div class="buttons__hero">
+                    <button class="hero__btn btn-style" style="background: linear-gradient(120deg, #ff8800, #e8360aea);">SoundCloud <ion-icon style="font-size: 1.6em;" name="logo-soundcloud"></ion-icon></button>
+                    <button class="hero__btn btn_dark btn-style">Explorar Projetos<ion-icon
+                            name="arrow-forward-outline"></ion-icon></button>
+                </div>
+            </div>
+
+            <div class="container-video">
+                <div class="video">
+                    <figure>
+                        <img src="https://i1.sndcdn.com/avatars-JJwzoFWOmWrNfG69-eHkZjg-t500x500.jpg" width="400"
+                            height="400" alt="">
+                    </figure>
+                    <div class="player-wrapper">
+                        <div class="player-icon">
+                            <div class="triangle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <figure>
+                <img src="/assets/img/client-2.jpg" width="310" height="480" alt="">
+            </figure>
+            <figure>
+                <img src="/assets/img/client-4.jpg" width="310" height="480" alt="">
+            </figure> -->
+
+        </div>
+
+    </header>
+
+    <main>
+        <section id="about">
+            <h2 class="title_section">Artista</h2>
+            <div class="container-about">
+                <figure>
+                    <img src="./assets/img/client-6.jpg" width="200" height="200" alt="Foto do artista">
+                </figure>
+                <article>
+                    <h2>Danilo Lopes - FOCüS(br)</h2>
+                    <p>
+                        Nascido em 2001, Danilo Lopes desde novo foi apaixonado pela musica eletrônica ate que em 2015
+                        criou seu projeto "Focus" com foco na EDM, mas em 2016 conheceu o Trance e então surgiu mais uma
+                        paixão, se aprofundou na vertente e descobriu o Psy Trance que abriu novas portas para sua
+                        carreira.
+                    </p>
+                    <p>
+                        Nascido em 2001, Danilo Lopes desde novo foi apaixonado pela musica eletrônica ate que em 2015
+                        criou seu projeto "Focus" com foco na EDM, mas em 2016 conheceu o Trance e então surgiu mais uma
+                        paixão, se aprofundou na vertente e descobriu o Psy Trance que abriu novas portas para sua
+                        carreira.
+                    </p>
+                    <div class="container-button">
+                        <button class="button-x btn-dark btn-style">Entrar em Contato <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2 class="title_section">Galeria</h2>
+            <div class="slider slider3" role="region" aria-roledescription="carousel" aria-label="Last news">
+                <!-- <button class="slider-btn prev" aria-hidden="true" tabindex="-1" aria-label="button previous"><ion-icon
+                        name="chevron-back-circle-sharp"></ion-icon></button>
+                <button class="slider-btn next" aria-hidden="true" tabindex="-1" aria-label="button next"><ion-icon
+                        name="chevron-forward-circle-sharp"></ion-icon></button> -->
+                <ul class="slider-content">
+                    <li class="item" aria-label="1 of 6">
+                        <figure>
+                            <img width="200" height="300"
+                                src="https://yandex-images.clstorage.net/pj53Hx139/62a749QGyj/r9y0AC8mOa_T4GLy43_8epzJ_cioArHeAzUEsAWn124C95DdKaE3V5wzAIpt-0HUQxfccC9hD8e03ItV715z87qOokxsZST2jqV1s6949X6DguCAqEWtjAgiH-dY4NU4XPKSsRPVFyHwSjb2HoU3nxcYjCEyelif6rHsQfYnKbKIz4QjLhpup8LrBdPFaO5GrYvy265uv6UjK1XwZuS-ITei9qg8_SIH6FA-8xqrP4gzG5sCDRdjpd-U1gXECAKzqt6qNyUtfqX1xxz_1mjMZZaAwsuSZ6iYMgZ7w3bKoSYvttutB94EDMFdMO0ohDyfMAKELQssa77hht0SyzYrjJ3NkgISGHm1w9U_4MNaykmUgODlkkO6kRgLWNZ-4aQsD5TkmzTxLgLNRCv1D44jpAYdmxMhLW2a_5TeN-0-MK6V1rQWKS14rdvGAfzjZchXpozZ551orYsLIHvMW_mMLwmO0osKwAcr5V8-2AmjLpQGGJgpEh12ivaE-yXZBjGDqf-aMTM_ULPN5gnK4ELPZquQ5NyLbrOrCzB6ynvFiDMkisysL-UmGv1XJfQtlA2JFzCZKykWUp7uiMQV3j4MlZD5mikOH06Tz9UmxfpI30ymnfnbpGmskwUcctRx4q8OJJbmmB_-GgjkTTDFDJ86gBE6ngksHXaHzJ_fDsgtIKuB-6MACC9mkP_4BcnEU9trvYDB_qhOnqIHMF3PV8iNAQOK67woxz0W5WsI_TKOH5ERMIQJPD1SnuukxCLgBiSygMSYICgBQbHf0hXO7nX1SJe96_WqTLGYOjp75W_KtDQKjOicJOAdFcxsJ-U4hzGlLz2fEis-SLLumuEEzBY3o5PRui0oI0CtwNQo5_V84GaegdHKt2uWkzkHcO9U16ccCLLOqDzmPxDoVRT1DqIpnw8DphIDH2uV7r3iLfs7BaCXxbALOTxlts_iAM3AXe5XnKjr2ZNIu60zFkzsX_w"
+                                alt="">
+                        </figure>
+                    </li>
+                    <li class="item" aria-label="2 of 6">
+                        <figure>
+
+                            <img width="200" height="300"
+                                src="https://yandex-images.clstorage.net/pj53Hx139/62a749QGyj/r9y0AC8mOa_T4GLy43_8epzJ_cioArHeAzUEsVSojzcEp5eKfqU3Vs5hVog49EyAQkPccys3C8LhiNYE61h2o-7Y90xpYCLwhKt_put8-XiBlL7ZtFi1gxl3WOtFq4BrUPD-sQ3VFDzgVy34EIIAhxgSjTxkN1Sd2LGTGcYFM5Or-YISEixyt8_aFMz7Z8FWiIbl359KnKgQPU_VQcCZAACU554l4DIk-l8o_D6KF6MbBa4DCQxuqP2L1yvpLjKxuteWGSU8cIDjwzjf-0XibYO29eOWXaG5PRN8xW_fnhgUueKlBsY5DfdRNs4RiQCgAhqBBTIEdZbvgMAk1wcNhqnvoy4QO2C28eAnyslDzm-DlNvjsk-okzAwac1E2pQ4NobUlinsNwHuSi7pG5Y7lh0Fvy8zAlGI_YPlAt8cL46yybcVJTp4ruLeO-r2QdBdj63Z7JlYsoAbE3PoXPKXPiywxKgYxR4p9V8D7zabC5YYBoUcAxlBge2m9zbnHQKym-eQDzcSZrjC1g3p0UbhUJOQ4vqfRpKACxJ1yGD2ixMoruONPeQvMf1EL8sBuBaHMAeHJwg9VZnhmccx3yAUi53niDIXDEa68fkC89tWy12ejeXVmFmqjicaa8JH0bYTNITXvSbYPSjnUR7qCo8fgToApSIDGUy79oLcJ8wMKpqf3qE0JyRFitzaDs3AUuxGg7XA2b9rm4wLNXDkbfO5NCiJ84of_yMpwWkm1BuqDoEwGqUyIz1VnM2Z8A_nCDOboOWBFAkDZKr2ygnn5nzPbL6fy9u9RKGxARNa3G_KjD0uitOGON8gAMZGPt4ShDq_PQG-JSAneZnzvNYj9xsiiLXHjBQrAni18Pcg_O9p4WWCpfTGmmOqsjwYUOdy2aQ_EKznnj79JST_dS7oN5wAnwM4vg0BBF6Z1L__FNopIYyhzaoFNCdjusbfCsnOZ9Bnq5_n4rlOlLgtJFPsWcc"
+                                alt="">
+                        </figure>
+                    </li>
+                    <li class="item" aria-label="3 of 6">
+                        <figure>
+
+                            <img width="200" height="300"
+                                src="https://avatars.mds.yandex.net/i?id=935db3e8f5abe9a3d65f6b3a903ea8ee4c1c57ba-8310601-images-thumbs&n=13"
+                                alt="">
+                        </figure>
+                    </li>
+                    <li class="item" aria-label="4 of 6">
+                        <figure>
+
+                            <img width="200" height="300"
+                                src="https://yandex-images.clstorage.net/pj53Hx139/62a749QGyj/r9y0AC8mOa_T4GLy43_8epzJ_cioArHeAzUEsAWn124C95DdKaE3V5wzAIpt-0HUQxfccC9hD8e03ItV715z87qOokxsZST2jqV1s6949X6DguCAqEWtjAgiH-dY4NU4XPKSsRPVFyHwSjb2HoU3nxcYjCEyelif6rHsQfYnKbKIz4QjLhpup8LrBdPFaO5GrYvy265uv6UjK1XwZuS-ITei9qg8_SIH6FA-8xqrP4gzG5sCDRdjpd-U1gXECAKzqt6qNyUtfqX1xxz_1mjMZZaAwsuSZ6iYMgZ7w3bKoSYvttutB94EDMFdMO0ohDyfMAKELQssa77hht0SyzYrjJ3NkgISGHm1w9U_4MNaykmUgODlkkO6kRgLWNZ-4aQsD5TkmzTxLgLNRCv1D44jpAYdmxMhLW2a_5TeN-0-MK6V1rQWKS14rdvGAfzjZchXpozZ551orYsLIHvMW_mMLwmO0osKwAcr5V8-2AmjLpQGGJgpEh12ivaE-yXZBjGDqf-aMTM_ULPN5gnK4ELPZquQ5NyLbrOrCzB6ynvFiDMkisysL-UmGv1XJfQtlA2JFzCZKykWUp7uiMQV3j4MlZD5mikOH06Tz9UmxfpI30ymnfnbpGmskwUcctRx4q8OJJbmmB_-GgjkTTDFDJ86gBE6ngksHXaHzJ_fDsgtIKuB-6MACC9mkP_4BcnEU9trvYDB_qhOnqIHMF3PV8iNAQOK67woxz0W5WsI_TKOH5ERMIQJPD1SnuukxCLgBiSygMSYICgBQbHf0hXO7nX1SJe96_WqTLGYOjp75W_KtDQKjOicJOAdFcxsJ-U4hzGlLz2fEis-SLLumuEEzBY3o5PRui0oI0CtwNQo5_V84GaegdHKt2uWkzkHcO9U16ccCLLOqDzmPxDoVRT1DqIpnw8DphIDH2uV7r3iLfs7BaCXxbALOTxlts_iAM3AXe5XnKjr2ZNIu60zFkzsX_w"
+                                alt="">
+                        </figure>
+                    </li>
+                    <li class="item" aria-label="5 of 6">
+                        <figure>
+
+                            <img width="200" height="300"
+                                src="https://yandex-images.clstorage.net/pj53Hx139/62a749QGyj/r9y0AC8mOa_T4GLy43_8epzJ_cioArHeAzUEsVSojzcEp5eKfqU3Vs5hVog49EyAQkPccys3C8LhiNYE61h2o-7Y90xpYCLwhKt_put8-XiBlL7ZtFi1gxl3WOtFq4BrUPD-sQ3VFDzgVy34EIIAhxgSjTxkN1Sd2LGTGcYFM5Or-YISEixyt8_aFMz7Z8FWiIbl359KnKgQPU_VQcCZAACU554l4DIk-l8o_D6KF6MbBa4DCQxuqP2L1yvpLjKxuteWGSU8cIDjwzjf-0XibYO29eOWXaG5PRN8xW_fnhgUueKlBsY5DfdRNs4RiQCgAhqBBTIEdZbvgMAk1wcNhqnvoy4QO2C28eAnyslDzm-DlNvjsk-okzAwac1E2pQ4NobUlinsNwHuSi7pG5Y7lh0Fvy8zAlGI_YPlAt8cL46yybcVJTp4ruLeO-r2QdBdj63Z7JlYsoAbE3PoXPKXPiywxKgYxR4p9V8D7zabC5YYBoUcAxlBge2m9zbnHQKym-eQDzcSZrjC1g3p0UbhUJOQ4vqfRpKACxJ1yGD2ixMoruONPeQvMf1EL8sBuBaHMAeHJwg9VZnhmccx3yAUi53niDIXDEa68fkC89tWy12ejeXVmFmqjicaa8JH0bYTNITXvSbYPSjnUR7qCo8fgToApSIDGUy79oLcJ8wMKpqf3qE0JyRFitzaDs3AUuxGg7XA2b9rm4wLNXDkbfO5NCiJ84of_yMpwWkm1BuqDoEwGqUyIz1VnM2Z8A_nCDOboOWBFAkDZKr2ygnn5nzPbL6fy9u9RKGxARNa3G_KjD0uitOGON8gAMZGPt4ShDq_PQG-JSAneZnzvNYj9xsiiLXHjBQrAni18Pcg_O9p4WWCpfTGmmOqsjwYUOdy2aQ_EKznnj79JST_dS7oN5wAnwM4vg0BBF6Z1L__FNopIYyhzaoFNCdjusbfCsnOZ9Bnq5_n4rlOlLgtJFPsWcc"
+                                alt="">
+                        </figure>
+                    </li>
+                    <li class="item" aria-label="6 of 6">
+                        <figure>
+
+                            <img width="200" height="300"
+                                src="https://avatars.mds.yandex.net/i?id=935db3e8f5abe9a3d65f6b3a903ea8ee4c1c57ba-8310601-images-thumbs&n=13"
+                                alt="">
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- <section id="services">
+            <h2 class="title_section">Serviços</h2>
+            <ul class="container-services">
+                <li class="card">
+                    Mix digital
+                </li>
+                <li class="card">
+                    Mix Colaborativa
+                </li>
+                <li class="card">
+                    Masterização
+                </li>
+                <li class="card">
+                    Produção Musical
+                </li>
+                <li class="card">
+                    Aulas de DJ
+                </li>
+                <li class="card">
+                    Eventos Corporativos
+                </li>
+                <li class="card">
+                    DJ de Clubes
+                </li>
+            </ul>
+
+            <div class="container-soundcloud">
+                <div class="soundcloud-wrapper">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rfkorec" title="bobby.korec" target="_blank" style="color: #cccccc; text-decoration: none;">bobby.korec</a> · <a href="https://soundcloud.com/rfkorec/human-being-being-human" title="Human Being Being Human" target="_blank" style="color: #cccccc; text-decoration: none;">Human Being Being Human</a></div>
+                </div>
+                <div class="soundcloud-wrapper">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rfkorec" title="bobby.korec" target="_blank" style="color: #cccccc; text-decoration: none;">bobby.korec</a> · <a href="https://soundcloud.com/rfkorec/human-being-being-human" title="Human Being Being Human" target="_blank" style="color: #cccccc; text-decoration: none;">Human Being Being Human</a></div>
+                </div>
+                <div class="soundcloud-wrapper">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11072274&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rfkorec" title="bobby.korec" target="_blank" style="color: #cccccc; text-decoration: none;">bobby.korec</a> · <a href="https://soundcloud.com/rfkorec/human-being-being-human" title="Human Being Being Human" target="_blank" style="color: #cccccc; text-decoration: none;">Human Being Being Human</a></div>
+                </div>
+            </div>
+                
+        </section> -->
+        <section id="course">
+            <h2 class="title_section">Cursos</h2>
+            <div class="slider slider3" role="region" aria-roledescription="carousel" aria-label="Last news">
+                <!-- <button class="slider-btn prev" aria-hidden="true" tabindex="-1">prev</button>
+                <button class="slider-btn next" aria-hidden="true" tabindex="-1">next</button> -->
+
+                <ul class="slider-content course-container">
+                    <li class="item" aria-label="1 of 6">
+                        <article>
+                            <figure>
+                                <img width="200" height="200"
+                                    src="https://avatars.mds.yandex.net/i?id=c62df55b1a5e0a82f8c225674fa27aefe790eb3e-8281979-images-thumbs&n=13"
+                                    alt="">
+                            </figure>
+                            <h3>Title Course</h3>
+                            <span class="data-course">13/10/2020</span>
+                        </article>
+                    </li>
+                    <li class="item" aria-label="2 of 6">
+                        <article>
+                            <figure>
+                                <img width="200" height="200"
+                                    src="https://avatars.mds.yandex.net/i?id=3c0291b81a78611c1c696ed3cbf807998c2af15e-10918338-images-thumbs&n=13"
+                                    alt="">
+                            </figure>
+                            <h3>Title Course</h3>
+                            <span class="data-course">13/10/2020</span>
+                        </article>
+                    </li>
+                    <li class="item" aria-label="3 of 6">
+                        <article>
+                            <figure>
+                                <img width="200" height="200"
+                                    src="https://yandex-images.clstorage.net/pj53Hx139/62a749QGyj/r9y0AC8mOa_T4GLy43_8epzJ_cioArHeAzUE5AShi2IFoZKPdfdkAZpjANxg_R3fFU7YIHgyCsCxiIJRu1tw8-7foUxkbSLyg6J_put8-XiBlL7ZtFi1gxl3WOtFq4BrUPD-sQ3VFDzgVy34EIIAhxgSjTxkN1Sd2LGTGcYFM5Or-YISEixyt8_aFMz7Z8FWiIbl359KnKgQPU_VQcCZAACU554l4DIk-l8o_D6KF6MbBa4DCQxuqP2L1yvpLjKxuteWGSU8cIDjwzjf-0XibYO29eOWXaG5PRN8xW_fnhgUueKlBsY5DfdRNs4RiQCgAhqBBTIEdZbvgMAk1wcNhqnvoy4QO2C28eAnyslDzm-DlNvjsk-okzAwac1E2pQ4NobUlinsNwHuSi7pG5Y7lh0Fvy8zAlGI_YPlAt8cL46yybcVJTp4ruLeO-r2QdBdj63Z7JlYsoAbE3PoXPKXPiywxKgYxR4p9V8D7zabC5YYBoUcAxlBge2m9zbnHQKym-eQDzcSZrjC1g3p0UbhUJOQ4vqfRpKACxJ1yGD2ixMoruONPeQvMf1EL8sBuBaHMAeHJwg9VZnhmccx3yAUi53niDIXDEa68fkC89tWy12ejeXVmFmqjicaa8JH0bYTNITXvSbYPSjnUR7qCo8fgToApSIDGUy79oLcJ8wMKpqf3qE0JyRFitzaDs3AUuxGg7XA2b9rm4wLNXDkbfO5NCiJ84of_yMpwWkm1BuqDoEwGqUyIz1VnM2Z8A_nCDOboOWBFAkDZKr2ygnn5nzPbL6fy9u9RKGxARNa3G_KjD0uitOGON8gAMZGPt4ShDq_PQG-JSAneZnzvNYj9xsiiLXHjBQrAni18Pcg_O9p4WWCpfTGmmOqsjwYUOdy2aQ_EKznnj79JST_dS7oN5wAnwM4vg0BBF6Z1L__FNopIYyhzaoFNCdjusbfCsnOZ9Bnq5_n4rlOlLgtJFPsWcc"
+                                    alt="">
+                            </figure>
+                            <h3>Title Course</h3>
+                            <span class="data-course">13/10/2020</span>
+                        </article>
+                    </li>
+                    <li class="item" aria-label="4 of 6">
+                        <article>
+                            <figure>
+                                <img width="200" height="200"
+                                    src="https://avatars.mds.yandex.net/i?id=c62df55b1a5e0a82f8c225674fa27aefe790eb3e-8281979-images-thumbs&n=13"
+                                    alt="">
+                            </figure>
+                            <h3>Title Course</h3>
+                            <span class="data-course">13/10/2020</span>
+                        </article>
+                    </li>
+                    <li class="item" aria-label="5 of 6">
+                        <article>
+                            <figure>
+                                <img width="200" height="200"
+                                    src="https://yandex-images.clstorage.net/pj53Hx139/62a749QGyj/r9y0AC8mOa_T4GLy43_8epzJ_cioArHeAzUE5AShi2IFoZKPdfdkAZpjANxg_R3fFU7YIHgyCsCxiIJRu1tw8-7foUxkbSLyg6J_put8-XiBlL7ZtFi1gxl3WOtFq4BrUPD-sQ3VFDzgVy34EIIAhxgSjTxkN1Sd2LGTGcYFM5Or-YISEixyt8_aFMz7Z8FWiIbl359KnKgQPU_VQcCZAACU554l4DIk-l8o_D6KF6MbBa4DCQxuqP2L1yvpLjKxuteWGSU8cIDjwzjf-0XibYO29eOWXaG5PRN8xW_fnhgUueKlBsY5DfdRNs4RiQCgAhqBBTIEdZbvgMAk1wcNhqnvoy4QO2C28eAnyslDzm-DlNvjsk-okzAwac1E2pQ4NobUlinsNwHuSi7pG5Y7lh0Fvy8zAlGI_YPlAt8cL46yybcVJTp4ruLeO-r2QdBdj63Z7JlYsoAbE3PoXPKXPiywxKgYxR4p9V8D7zabC5YYBoUcAxlBge2m9zbnHQKym-eQDzcSZrjC1g3p0UbhUJOQ4vqfRpKACxJ1yGD2ixMoruONPeQvMf1EL8sBuBaHMAeHJwg9VZnhmccx3yAUi53niDIXDEa68fkC89tWy12ejeXVmFmqjicaa8JH0bYTNITXvSbYPSjnUR7qCo8fgToApSIDGUy79oLcJ8wMKpqf3qE0JyRFitzaDs3AUuxGg7XA2b9rm4wLNXDkbfO5NCiJ84of_yMpwWkm1BuqDoEwGqUyIz1VnM2Z8A_nCDOboOWBFAkDZKr2ygnn5nzPbL6fy9u9RKGxARNa3G_KjD0uitOGON8gAMZGPt4ShDq_PQG-JSAneZnzvNYj9xsiiLXHjBQrAni18Pcg_O9p4WWCpfTGmmOqsjwYUOdy2aQ_EKznnj79JST_dS7oN5wAnwM4vg0BBF6Z1L__FNopIYyhzaoFNCdjusbfCsnOZ9Bnq5_n4rlOlLgtJFPsWcc"
+                                    alt="">
+                            </figure>
+                            <h3>Title Course</h3>
+                            <span class="data-course">13/10/2020</span>
+                        </article>
+                    </li>
+                    <li class="item" aria-label="6 of 6">
+                        <article>
+                            <figure>
+                                <img width="200" height="200"
+                                    src="https://avatars.mds.yandex.net/i?id=3c0291b81a78611c1c696ed3cbf807998c2af15e-10918338-images-thumbs&n=13"
+                                    alt="">
+                            </figure>
+                            <h3>Title Course</h3>
+                            <span class="data-course">13/10/2020</span>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="form">
+            <h2 class="title_section">Entre em Contato</h2>
+            <div class="container-form">
+                <div class="form-image">
+                    <figure>
+                        <img src="https://avatars.mds.yandex.net/i?id=90bbfa049795d94f9d8af200f7881a74dd8b6966-9068434-images-thumbs&n=13"
+                            alt="">
+                    </figure>
+                </div>
+                <div class="form-content">
+                    <form action="">
+                        <div class="content-input input-effect">
+                            <input class="effect" type="text">
+                            <label>Nome</label>
+                            <span class="focus-border">
+                                <i></i>
+                            </span>
+                        </div>
+                        <div class="content-input input-effect">
+                            <input class="effect" type="text">
+                            <label>E-mail</label>
+                            <span class="focus-border">
+                                <i></i>
+                            </span>
+                        </div>
+                        <div class="content-input input-effect">
+                            <textarea class="effect"></textarea>
+                            <label>Mensagem</label>
+                            <span class="focus-border">
+                                <i></i>
+                            </span>
+                        </div>
+                        <button class="btn-style" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="testimonials">
+            <h2 class="title_section">Testemunhos</h2>
+            <div class="container-testimonial">
+                <div class="slide">
+                    <figure><img
+                            src="https://avatars.mds.yandex.net/i?id=b426f30dde9da6914983a22b9879bb5ed430da07-9097381-images-thumbs&n=13"
+                            width="100" height="100" alt=""></figure>
+                    <div class="content-testimonial">
+                        <p>
+                            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci cupiditate eligendi
+                            veritatis ducimus corrupti sapiente error in ipsam consequatur quod molestiae ut, corporis
+                            autem voluptate similique magnam. Veniam, dolore maiores!"
+                        </p>
+                        <h4>kevin beacon</h4>
+                    </div>
+                </div>
+        
+                <div class="slide">
+                    <figure><img
+                            src="https://avatars.mds.yandex.net/i?id=b426f30dde9da6914983a22b9879bb5ed430da07-9097381-images-thumbs&n=13"
+                            width="100" height="100" alt=""></figure>
+                    <div class="content-testimonial">
+                        <p>
+                            " Adipisci cupiditate eligendi veritatis ducimus corrupti sapiente error Lorem ipsum dolor,
+                            sit amet consectetur adipisicing elit. in ipsam consequatur quod molestiae utilique magnam.
+                            Veniam, dolore maiores!"
+                        </p>
+                        <h4>taylor beacon</h4>
+                    </div>
+                </div>
+        
+                <div class="slide">
+                    <figure><img
+                            src="https://avatars.mds.yandex.net/i?id=b426f30dde9da6914983a22b9879bb5ed430da07-9097381-images-thumbs&n=13"
+                            width="100" height="100" alt=""></figure>
+                    <div class="content-testimonial">
+                        <p>
+                            "Lorem ipsum dolor, sit amet erque magnam. Veniam, dolore maiores consectetur adipisicing
+                            elerque magnam. Veniam, dolore maioresit. Adipisci cupiditate eligendi veritatis ducimus
+                            corrupti sapiente erque magnam. Veniam, dolore maiores!"
+                        </p>
+                        <h4>rato beacon</h4>
+                    </div>
+                </div>
+        
+                <div class="action">
+                    <button class="btn-style" type="button" onclick="previous()">Previous</button>
+                    <button class="btn-style" type="button" onclick="next()">Next</button>
+                </div>
+        
+            </div>
+        </section> -->
+    </main>
+
+    <!-- Player audio -->
+    <div class="music-body-wrapper">
+        <div class="music-body">
+            <audio src="https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/1.mp3"
+                id="audio"></audio>
+
+            <div class="music-progress">
+                <div class="progress-bar">
+                    <span class="progress-line"></span>
+                    <input type='range' min='0' max='100' value='0' class="progress" id="progress" />
+                </div>
+                <div class="duration">
+                    <span class="current-time">00:00</span>
+                    <span class="duration-time">00:00</span>
+                </div>
+            </div>
+
+            <div class="music-controls">
+
+                <div class="left-bar-container">
+                    <!-- <figure class="music-img">
+                    <img src="" id="img" alt="">
+                </figure> -->
+                    <div class="music-info">
+                        <h2 id="title">Yıldız Tozu</h2>
+                    </div>
+                </div>
+
+                <div class="container-controls">
+
+                    <div class="button-row">
+                        <button class="button | button--toggle" id="repeat">
+                            <ion-icon name="shuffle-outline"></ion-icon>
+                        </button>
+                        <button class="prevbtn button" id="prevbtn">
+                            <ion-icon name="play-skip-back-sharp"></ion-icon>
+                        </button>
+                        <button class="playpause button--play is-active button" id="playpause">
+                            <ion-icon class="fa-play" id="playpause-btn" name="play-sharp"></ion-icon>
+                        </button>
+                        <button class="nextbtn button" id="nextbtn">
+                            <ion-icon name="play-skip-forward-sharp"></ion-icon>
+                        </button>
+                        <button class="button | button--toggle" id="refresh">
+                            <ion-icon name="refresh-sharp"></ion-icon>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="right-bar-container">
+                    <div class="container-volume">
+                        <button class="volume" id="volume">
+                            <ion-icon name="volume-high-sharp"></ion-icon>
+                        </button>
+                        <div class="layer">
+                            <div class="volume-slider">
+                                <span class="bar"></span>
+                                <input type='range' min='0.01' max='1' value='1' step='0.01' class="volumerange" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="like" id="like">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                    <button class="list" id="list">
+                        <ion-icon name="menu-sharp"></ion-icon>
+                    </button>
+                    <button id="closeList">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="songs-list" id="songs-list"></div>
+        </div>
+    </div>
+
+    <!-- Player video -->
+    <div id="player-video-modal">
+        <div class="container-button-close">
+            <button id="close-video">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

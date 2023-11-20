@@ -1,0 +1,22 @@
+// tools
+@import "./tools/reset.scss";
+
+// animations
+@import "./animations/animation-inputs.scss";
+@import "./animations/animation-btn.scss";
+
+// components
+@import "./components/load.scss";
+@import "./components/navbar.scss";
+@import "./components/hero.scss";
+@import "./components/slide.scss";
+@import "./components/video.scss";
+@import "./components/player.scss";
+@import "./components/player-video.scss";
+
+// sections
+@import "./sections/course.scss";
+@import "./sections/form.scss";
+@import "./sections/testimonials.scss";
+@import "./sections/about.scss";
+@import "./sections/services.scss";

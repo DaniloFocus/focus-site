@@ -1,0 +1,423 @@
+:root {
+    --color-text-primary: rgb(180, 188, 208);
+    --color-text-secondary: rgb(255, 255, 255);
+    --color-background-primary: rgb(24, 24, 27);
+    --color-background-secondary: rgb(34, 35, 38);
+    --color-border: rgb(49, 48, 53);
+    --color-accent: rgb(252, 252, 252);
+    --shadow-alpha: 0.25;
+    --spinner: var(--color-accent);
+
+    :has(.theme-toggle input:checked) {
+        --color-text-primary: rgb(105, 105, 105);
+        --color-text-secondary: rgb(0, 0, 0);
+        --color-background-primary: rgb(242, 247, 249);
+        --color-background-secondary: rgb(255, 255, 255);
+        --color-border: rgb(222, 222, 222);
+        --color-accent: rgb(147, 51, 234);
+        --shadow-alpha: 0.025;
+        --spinner: var(--color-accent);
+    }
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+.ShowMusicBody {
+    height: 100vh!important;
+    z-index: 300;
+    .music-body {
+        padding: 2em;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      
+
+    }
+    .music-controls {
+        height: 100px!important;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+    }
+}
+
+.overflow-hidden {
+    overflow-y: hidden !important;
+}
+
+.music-body-wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+}
+
+.music-body {
+    width: 100%;
+    height: 100%;
+
+    .music-controls {
+        margin: auto;
+        max-width: 1300px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .container-controls,
+        .left-bar-container,
+        .right-bar-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-controls {
+            position: relative;
+            border-radius: 2rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 1.3rem;
+
+            .fa-play {
+                position: relative;
+                display: inline-block;
+                left: 0.1rem;
+            }
+        }
+
+        .left-bar-container,
+        .right-bar-container {
+            width: 200px;
+        }
+
+        .right-bar-container button {
+            background-color: inherit;
+            border: none;
+            margin: 0 32px;
+        }
+
+        .right-bar-container button ion-icon {
+            color: #ccc;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .left-bar-container .music-img img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .left-bar-container .music-info h2 {
+            margin-top: 1rem;
+            letter-spacing: 0.02rem;
+            color: rgb(117, 116, 116);
+            color: #dddddd;
+        }
+    }
+
+
+    .volume {
+        z-index: 5;
+    }
+
+    .layer {
+        z-index: 4;
+        position: absolute;
+        background: inherit;
+        height: 2.188rem;
+        width: 10rem;
+        right: 0;
+        top: -22px;
+        margin: auto;
+        display: grid;
+        place-items: center;
+        visibility: hidden;
+    }
+
+    .layer.hide {
+        visibility: visible;
+    }
+
+    .container-volume {
+        position: relative;
+    }
+
+    .list-close {
+        background: none;
+        font-size: 1.1rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: rgb(199, 7, 7);
+        border: none;
+        padding: .3em .3em;
+        font-size: 1.2em;
+        border-radius: 4px;
+        color: #ebebeb;
+        cursor: pointer;
+    }
+
+    .songs-list {
+        // position: absolute;
+        // width: 100%;
+        // height: 100%;
+        // background: #000;
+        // top: 0;
+        // left: 0;
+        // z-index: 10;
+        visibility: hidden;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            padding: 2em 1em;
+            list-style: none;
+            li {
+                cursor: pointer;
+                margin: 12px 0;
+                display: flex;
+                align-items: center;
+                ion-icon {
+                    font-size: 3em;
+                    color: #cfcfcf;
+                    margin-right: .4em;
+                    &:hover {
+                        color: #fff;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .showlist {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    .music-progress {
+        display: none;
+        margin-top: 1rem;
+
+        .progress-bar {
+            background: #dfdfdf;
+            height: 0.2rem;
+            width: 100%;
+            margin-bottom: 0.4rem;
+            position: relative;
+            cursor: pointer;
+        }
+    }
+
+
+    .progress {
+        background: #55d679;
+        width: 0;
+        height: 100%;
+        position: relative;
+    }
+
+    .progress::before {
+        content: "";
+        position: absolute;
+        height: 0.7rem;
+        width: 0.7rem;
+        border-radius: 50%;
+        top: 50%;
+        right: -5px;
+        z-index: 2;
+        transform: translateY(-50%);
+        background: inherit;
+        transition: all 0.1s ease;
+    }
+
+    .duration {
+        display: flex;
+        color: #ccc;
+        justify-content: space-between;
+
+        span {
+            font-size: 1rem;
+            margin-top: 8px;
+        }
+    }
+
+    .volume-slider,
+    .progress-bar {
+        position: relative;
+        width: 100%;
+        height: 0.2rem;
+        background: transparent;
+    }
+
+
+    .volume-slider {
+        width: 80%;
+    }
+
+    .volume-slider {
+        right: -15px;
+        ;
+    }
+
+    .volume-slider .bar,
+    .progress-bar .progress-line {
+        display: block;
+        width: 0;
+        height: inherit;
+        background-color: #ccc;
+    }
+
+    .volume-slider .bar {
+        width: 100%;
+    }
+
+    .volume-slider .volumerange,
+    .progress-bar .progress {
+        width: 100%;
+        -webkit-appearance: none;
+        height: inherit;
+        background: transparent;
+        outline: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .volume-slider .volumerange::-webkit-slider-thumb,
+    .progress-bar .progress::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 0.7rem;
+        width: 0.7rem;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .button-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .button {
+        border-radius: 99em;
+        padding: 0;
+        border: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        transition: color 0.15s ease, width 0.25s ease-out;
+        position: relative;
+        background-color: #0c0c0c;
+        border: 2px solid var(--color-border);
+        box-shadow: 0 4px 8px 0 rgba(0 0 0 / var(--shadow-alpha));
+
+        ion-icon {
+            color: #ccc;
+            font-size: 1.6rem;
+        }
+
+        &--play {
+            // width: 4.5rem;
+            // height: 4.5rem;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                width: calc(100% + 6px);
+                height: calc(100% + 6px);
+                z-index: -1;
+                left: -3px;
+                top: -3px;
+                position: absolute;
+                background-image: conic-gradient(transparent, var(--spinner));
+                border-radius: 99em;
+                opacity: 0;
+            }
+
+            .ph-play,
+            .ph-pause {
+                grid-row-start: 1;
+                grid-column-start: 1;
+                transition: opacity 0.15s ease, transform 0.25s ease;
+            }
+
+            .ph-play {
+                opacity: 1;
+            }
+
+            .ph-pause {
+                opacity: 0;
+                transform: rotate(0);
+            }
+
+            &.is-active {
+                .ph-play {
+                    opacity: 0;
+                    transform: rotate(180deg);
+                }
+
+                .ph-pause {
+                    opacity: 1;
+                    transform: rotate(180deg);
+                }
+
+                &:after {
+                    opacity: 1;
+                    animation: spin 2s linear infinite;
+                }
+            }
+        }
+
+        &:hover {
+            color: var(--color-text-secondary);
+        }
+
+        &.is-active {
+            color: var(--color-accent);
+        }
+    }
+
+}
+
+#showClose {
+    display: none;
+}
+.showCloseBtn {
+    display: block!important;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

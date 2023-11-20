@@ -1,0 +1,23 @@
+#course {
+    .course-container {
+
+        article{
+            width: 100%;
+            figure {
+                width: 100%;
+                height: 200px;
+                border-radius: 1rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                }
+            }
+            h3 {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+}
