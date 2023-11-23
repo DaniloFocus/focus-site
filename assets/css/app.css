@@ -635,6 +635,50 @@ header .hero p {
   }
 }
 
+@media screen and (max-width: 768px){
+  header .hero__inner {
+    width: 100%;
+  }
+  body > header > div > div.hero__inner > p{
+    width: 100%;
+  }
+  body > header > div > div.hero__inner > div{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body > header > div > div.container-video{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    right: 10%;
+    top: 110%;
+  }
+  #about > div{
+    flex-direction: column;
+  }
+  #about .container-about figure{
+    width: 55%!important;
+  }
+  #about .container-about article{
+    width: 100%!important;
+  }
+  #form .container-form{
+    flex-direction: column;
+  }
+  #form > div > div.form-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%!important;
+  }
+  #form .container-form .form-content{
+    width: 97%!important;
+    
+  }
+ 
+}
+
 :root {
   --ctr-width: 800px;
   --ctr-offset: 6rem;
