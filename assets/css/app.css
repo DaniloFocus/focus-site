@@ -520,6 +520,9 @@ header .btn-call {
   align-items: center;
   justify-content: center;
 }
+body > header > div > div.container-video{
+  width: 40%;
+}
 header .btn-call ion-icon {
   margin-left: 6px;
 }
@@ -530,6 +533,7 @@ header .logo {
   font-weight: 700;
   color: #ededed;
   font-family: 'Chakra Petch', sans-serif;
+  margin-left: 15px;
 }
 header .hero {
   width: 100%;
@@ -595,6 +599,12 @@ header .hero .btn_dark {
   background-color: transparent;
   color: #a4a4a4;
 }
+@media screen and (max-width: 425px){
+  body > header > div > div.container-video{
+    width: 55%!important;
+    
+  }
+}
 @media screen and (max-width: 1040px) {
   header .hero {
     max-width: 900px;
@@ -649,7 +659,7 @@ header .hero p {
   
   body > header > div > div.container-video{
     width: 100%;
-    height: 100px;
+    height: 150px;
     position: absolute;
     right: 10%;
     top: 110%;
