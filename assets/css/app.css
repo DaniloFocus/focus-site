@@ -599,11 +599,40 @@ header .hero .btn_dark {
   background-color: transparent;
   color: #a4a4a4;
 }
+
+@media screen and (max-width: 585px){
+  body > div.music-body-wrapper > div > div.music-controls > div.left-bar-container{
+    width: 20%;
+  }
+  body > div.music-body-wrapper > div > div.music-controls > div.right-bar-container{
+    width: 25%;
+  }
+  body > div.music-body-wrapper > div > div.music-controls{
+    justify-content: space-around;
+  }
+  body > div.music-body-wrapper > div > div.music-controls > div.left-bar-container #title{
+    font-size: 15px;
+    text-align: center;
+  }
+  body > div.music-body-wrapper > div > div.music-controls > div.right-bar-container > div{
+   
+  }
+  body > div.music-body-wrapper > div > div.music-controls > div.container-controls{
+    width: 30%;
+  }
+}
+@media screen and (max-width: 495px){
+  body > header > div > div.container-video{
+    top: 100%!important;
+    
+  }
+}
 @media screen and (max-width: 425px){
   body > header > div > div.container-video{
     width: 55%!important;
     
   }
+  
 }
 @media screen and (max-width: 1040px) {
   header .hero {
