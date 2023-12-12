@@ -331,6 +331,7 @@ nav {
   background-color: #0f0f0f;
   z-index: 100;
 }
+
 @media only screen and (min-width: 75em) {
   nav {
     width: 120rem;
@@ -422,6 +423,11 @@ nav ul li a:hover {
 }
 
 /*Stying for small screens*/
+@media screen and (max-width: 1210px){
+ nav{
+  margin: none;
+ }
+}
 @media screen and (max-width: 800px) {
   nav {
     position: fixed;
@@ -528,7 +534,7 @@ header .btn-call ion-icon {
 }
 header .logo {
   text-align: center;
-  width: 15%;
+  width: 20%;
   font-size: 3.6rem;
   font-weight: 700;
   color: #ededed;
@@ -1522,6 +1528,24 @@ header .hero p {
   border-radius: 15px;
   margin: 1rem;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 1200px){ 
+  nav .social-icons{
+    display: none;
+  }
+  nav .nav-links{
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
