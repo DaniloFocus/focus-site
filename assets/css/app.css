@@ -638,7 +638,14 @@ header .hero .btn_dark {
     width: 55%!important;
     
   }
+  body > div.music-body-wrapper > div > div.music-controls > div.left-bar-container #title{
+    font-size: 10px;
+  }
+  body > div.music-body-wrapper > div > div.music-controls > div.left-bar-container{
+    width: 15%;
+  }
   
+ 
 }
 @media screen and (max-width: 1040px) {
   header .hero {
@@ -1547,5 +1554,11 @@ header .hero p {
     transition: all 0.7s ease;
   }
 }
+@media screen and (max-width: 425px){
+  body > div.music-body-wrapper > div > div.music-controls{
+    flex-direction: column;
+  }
+}
+
 
 /*# sourceMappingURL=app.css.map */
