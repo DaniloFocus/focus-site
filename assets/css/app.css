@@ -614,7 +614,7 @@ header .hero .btn_dark {
     width: 25%;
   }
   body > div.music-body-wrapper > div > div.music-controls{
-    justify-content: space-around;
+    justify-content: space-between;
   }
   body > div.music-body-wrapper > div > div.music-controls > div.left-bar-container #title{
     font-size: 15px;

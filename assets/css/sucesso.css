@@ -1,0 +1,30 @@
+body {
+    width: 100%;
+    height: 700px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #e3e3e3;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #d6d6d6;
+  }
+
+  body a{
+    width: 200px;
+    height: 50px;
+    border: #fff solid 1px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: #0f0f0f;
+    background-color: #fff;
+  }
